@@ -28,4 +28,5 @@ public class ProvinceFormatter implements Formatter<Province> {
     public String print(Province object, Locale locale) {
         return "[" + object.getId() + ", " +object.getName() + "]";
     }
+
 }

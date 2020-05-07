@@ -12,9 +12,6 @@ public class Province {
 
     private String name;
 
-    @OneToMany(mappedBy = "province")
-    private Set<Customer> customers;
-
     public Province() {
     }
 
@@ -38,11 +35,4 @@ public class Province {
         this.name = name;
     }
 
-    public Set<Customer> getCustomers() {
-        return customers;
-    }
-
-    public void setCustomers(Set<Customer> customers) {
-        this.customers = customers;
-    }
 }

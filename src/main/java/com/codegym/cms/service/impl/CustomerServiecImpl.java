@@ -20,7 +20,8 @@ public class CustomerServiecImpl implements CustomerService {
 
     @Override
     public Customer findById(Long id) {
-        return customerRepository.findOne(id);
+
+        return customerRepository.findById(id).get();
     }
 
     @Override
@@ -30,7 +31,7 @@ public class CustomerServiecImpl implements CustomerService {
 
     @Override
     public void remove(Long id) {
-        customerRepository.delete(id);
+        customerRepository.deleteById(id);
     }
 
     @Override
